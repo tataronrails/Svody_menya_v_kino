@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date time:</b>
+  <%= @offer.Date_time %>
+</p>
+
+<p>
+  <b>Pays:</b>
+  <%= @offer.Pays %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%= @offer.Owner %>
+</p>
+
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>

@@ -1,4 +1,7 @@
 Kino3::Application.routes.draw do
+  resources :offers
+
+
   get "home/index"
 
   devise_for :users
