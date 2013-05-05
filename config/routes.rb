@@ -1,4 +1,7 @@
 Kino3::Application.routes.draw do
+  resources :genres
+
+
   resources :offers
 
 
