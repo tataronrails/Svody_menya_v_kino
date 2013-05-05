@@ -1,0 +1,31 @@
+<h1>Listing msgs</h1>
+
+<table>
+  <tr>
+    <th>From</th>
+    <th>To</th>
+    <th>Msg</th>
+    <th>Flags</th>
+    <th>Date time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @msgs.each do |msg| %>
+  <tr>
+    <td><%= msg.From %></td>
+    <td><%= msg.To %></td>
+    <td><%= msg.Msg %></td>
+    <td><%= msg.Flags %></td>
+    <td><%= msg.Date_time %></td>
+    <td><%= link_to 'Show', msg %></td>
+    <td><%= link_to 'Edit', edit_msg_path(msg) %></td>
+    <td><%= link_to 'Destroy', msg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Msg', new_msg_path %>
