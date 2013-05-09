@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130505075642) do
+=======
+ActiveRecord::Schema.define(:version => 20130505074233) do
+>>>>>>> origin/IK__create_resource_Msg__48795747
 
   create_table "cinemas", :force => true do |t|
     t.string   "Adress"
@@ -28,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20130505075642) do
     t.datetime "updated_at",  :null => false
   end
 
+<<<<<<< HEAD
   create_table "genres", :force => true do |t|
     t.string   "Name"
     t.datetime "created_at", :null => false
@@ -38,6 +43,14 @@ ActiveRecord::Schema.define(:version => 20130505075642) do
     t.date     "Date_time"
     t.string   "Pays"
     t.string   "Owner"
+=======
+  create_table "msgs", :force => true do |t|
+    t.string   "From"
+    t.string   "To"
+    t.text     "Msg"
+    t.string   "Flags"
+    t.date     "Date_time"
+>>>>>>> origin/IK__create_resource_Msg__48795747
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

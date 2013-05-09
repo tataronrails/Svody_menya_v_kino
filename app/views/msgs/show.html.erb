@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>From:</b>
+  <%= @msg.From %>
+</p>
+
+<p>
+  <b>To:</b>
+  <%= @msg.To %>
+</p>
+
+<p>
+  <b>Msg:</b>
+  <%= @msg.Msg %>
+</p>
+
+<p>
+  <b>Flags:</b>
+  <%= @msg.Flags %>
+</p>
+
+<p>
+  <b>Date time:</b>
+  <%= @msg.Date_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_msg_path(@msg) %> |
+<%= link_to 'Back', msgs_path %>
