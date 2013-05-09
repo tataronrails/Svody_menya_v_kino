@@ -1,6 +1,8 @@
 Kino3::Application.routes.draw do
   resources :people
 
+  resources :offers
+
 
   get "home/index"
 
