@@ -1,11 +1,11 @@
 Kino3::Application.routes.draw do
-<<<<<<< HEAD
+
   resources :people
 
   resources :offers
-=======
+
   resources :msgs
->>>>>>> origin/IK__create_resource_Msg__48795747
+
 
 
   get "home/index"
